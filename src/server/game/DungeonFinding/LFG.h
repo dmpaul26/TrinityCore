@@ -51,6 +51,7 @@ enum LfgUpdateType
     LFG_UPDATETYPE_PROPOSAL_FAILED               = 8,
     LFG_UPDATETYPE_PROPOSAL_DECLINED             = 9,
     LFG_UPDATETYPE_GROUP_FOUND                   = 10,
+    LFG_UPDATETYPE_READDED_TO_QUEUE              = 11,     // Not confirmed
     LFG_UPDATETYPE_ADDED_TO_QUEUE                = 12,
     LFG_UPDATETYPE_PROPOSAL_BEGIN                = 13,
     LFG_UPDATETYPE_UPDATE_STATUS                 = 14,

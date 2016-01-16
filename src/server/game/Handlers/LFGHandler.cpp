@@ -315,6 +315,7 @@ void WorldSession::SendLfgUpdatePlayer(lfg::LfgUpdateData const& updateData)
     {
         case lfg::LFG_UPDATETYPE_JOIN_QUEUE:
         case lfg::LFG_UPDATETYPE_ADDED_TO_QUEUE:
+        case lfg::LFG_UPDATETYPE_READDED_TO_QUEUE:
             queued = true;
             break;
         case lfg::LFG_UPDATETYPE_UPDATE_STATUS:
@@ -351,6 +352,7 @@ void WorldSession::SendLfgUpdateParty(const lfg::LfgUpdateData& updateData)
 
     switch (updateData.updateType)
     {
+        case lfg::LFG_UPDATETYPE_READDED_TO_QUEUE:
         case lfg::LFG_UPDATETYPE_ADDED_TO_QUEUE:                // Rolecheck Success
             queued = true;
             // no break on purpose
